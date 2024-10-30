@@ -44,9 +44,11 @@
    justify-content : space-between;
    height : 50px;
    /* background-color : rg; */
+ 
    border-radius : 30px;
+   padding-top : 30px;
    padding-inline : 20px;
-   padding-block : 20px;
+   /* padding-block : 20px; */
    
 }
 .homeContainer {
@@ -59,6 +61,7 @@
   background-repeat: repeat;
   background-position: center;
   height : 80vh;
+  margin-inline : 30px;
 
 
 }
@@ -69,6 +72,20 @@
   text-decoration : none;
   font-size : 20px;
   margin-top : 15px;
+  animation-name : signButton;
+  animation-duration : 3s;
+  animation-fill-mode : forwards;
+}
+.btn:hover {
+  transform :rotateY(180deg);
+}
+@keyframes signButton {
+  0% {
+    opacity : 0;
+  }
+  100%{
+    opacity : 1;
+  }
 }
 .title ,.introContent{
   color : var(--nature-color-two);
@@ -80,4 +97,53 @@
   align-items : flex-start;
   justify-content : center;
   margin-top : 100px;
+  width : 600px;
+  margin-left : 20px;
+}
+.ranchIntro p {
+  font-size : 18px;
+  line-height : 1.7;
+  position : relative;
+  animation-name : homeintro;
+  animation-duration : 3s;
+  animation-fill-mode : forwards;
+}
+@keyframes homeintro {
+  0%{
+    left : -500px;
+  }
+  100%{
+    left : 0px;
+  }
+}
+.ranchIntro h1 {
+  font-size : 60px;
+  animation-name : heading;
+  position : relative;
+  animation-duration : 3s;
+  animation-fill-mode : forwards;
+  position : relative;
+}
+@keyframes heading {
+  0% {
+      top : -60px;
+  }
+  100% {
+    top : 10px;
+  }
+}
+.featured {
+  background-color : green;
+  margin : 0 auto;
+  width : 85%;
+  height : 65vh;
+  margin-top : 50px;
+  
+
+}
+.featured {
+  display : flex;
+  justify-content : space-between;
+  align-items : center;
+  padding : 15px;
 }
