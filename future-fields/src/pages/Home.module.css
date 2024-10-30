@@ -1,0 +1,83 @@
+:root {
+    /* primary colors */
+    --background-color-one : hsl(68, 39%, 30%);
+    --background-color-two : hsl(58,38%,58%);
+    --text-color-one : hsl(25, 54%, 35%);
+    --text-color-two:#e08543;
+    --button-color-one : hsl(50, 45%, 87%);
+    --button-color-two : #c9c5b1;
+  
+    /* Accent-colors  */
+    --hightlight-color-one : #EEEE9B;
+    --hightlight-color-two : #C45508;
+  
+    /* Nature Colors  */
+    --heading-color-one : hsl(120, 61% , 34%);
+    --heading-color-two : hsl(197, 71% , 73%);
+    --nature-color-one : #fffd37;
+    --nature-color-two : #FFFDD0;
+  
+    /* Warmth colors */
+    --warmth-color-one : rgb( 211, 182, 156);
+    --warmth-color-two : #E35336;
+    --warmth-color-three : #B2AC88;
+    --warmth-color-four :  #F8998D;
+  
+    /* Modern Colors  */
+    --modern-color-one : #FBFAF5;
+    --modern-color-two : #d3d3d3;
+    --modern-color-three : 	#05014a;
+    --modern-color-four : hsl(166, 100%, 20%);
+  
+    /* Vintage color */
+    --vintage-color-one :#8C9DAD ;
+    --vintage-color-two : #FDFD96;
+    --vintage-color-three :  #7c0a02;
+    --vintage-color-four : #aaaaaa;
+  }
+  
+  
+
+
+.homenav {
+    display : flex;
+   justify-content : space-between;
+   height : 50px;
+   /* background-color : rg; */
+   border-radius : 30px;
+   padding-inline : 20px;
+   padding-block : 20px;
+   
+}
+.homeContainer {
+  background-image : linear-gradient(
+    rgba(0, 7, 35, 0.7),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url('/Ranch.jpeg');
+  /* background-size : cover; */
+  background-repeat: repeat;
+  background-position: center;
+  height : 80vh;
+
+
+}
+.btn {
+  padding : 10px 40px;
+  border : 2px solid #fff;
+  color : #fff;
+  text-decoration : none;
+  font-size : 20px;
+  margin-top : 15px;
+}
+.title ,.introContent{
+  color : var(--nature-color-two);
+  margin-bottom : 10px;
+}
+.ranchIntro {
+  display : flex;
+  flex-direction : column;
+  align-items : flex-start;
+  justify-content : center;
+  margin-top : 100px;
+}
