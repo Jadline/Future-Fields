@@ -26,6 +26,7 @@
     /* Modern Colors  */
     --modern-color-one : #FBFAF5;
     --modern-color-two : #d3d3d3;
+    --modern-color-two-verone : hsla(0, 0%, 85%,0.3);
     --modern-color-three : 	#05014a;
     --modern-color-four : hsl(166, 100%, 20%);
   
@@ -132,18 +133,27 @@
     top : 10px;
   }
 }
-.featured {
-  background-color : green;
-  margin : 0 auto;
-  width : 85%;
-  height : 65vh;
+.newproduce {
+  background-color : var(--modern-color-two-verone);
+  width : 95%;
+  height : 85vh;
   margin-top : 50px;
-  
-
+  margin-inline : auto;
+  /* margin : auto; */
+  padding : 30px;
 }
-.featured {
+.featured { 
   display : flex;
   justify-content : space-between;
-  align-items : center;
-  padding : 15px;
+  align-items : center; 
 }
+/* .featured {
+ 
+} */
+/* .featurestitle {
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  background-color : var(--modern-color-two-verone);
+  width : 75%;
+} */

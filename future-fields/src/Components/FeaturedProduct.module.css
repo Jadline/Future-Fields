@@ -1,9 +1,54 @@
+:root {
+    /* primary colors */
+    --background-color-one : hsl(68, 39%, 30%);
+    --background-color-two : hsl(58,38%,58%);
+    --text-color-one : hsl(25, 54%, 35%);
+    --text-color-two:#e08543;
+    --button-color-one : hsl(50, 45%, 87%);
+    --button-color-two : #c9c5b1;
+  
+    /* Accent-colors  */
+    --hightlight-color-one : #EEEE9B;
+    --hightlight-color-two : #C45508;
+    --highlight-color-two-versone:hsl(25, 92%, 60%);
+  
+    /* Nature Colors  */
+    --heading-color-one : hsl(120, 61% , 34%);
+    --heading-color-one-verone : hsl(120, 61% , 74%);
+    --heading-color-two : hsl(197, 71% , 73%);
+    --nature-color-one : #fffd37;
+    --nature-color-two : #FFFDD0;
+  
+    /* Warmth colors */
+    --warmth-color-one : rgb( 211, 182, 156);
+    --warmth-color-two : #E35336;
+    --warmth-color-three : #B2AC88;
+    --warmth-color-four :  #F8998D;
+  
+    /* Modern Colors  */
+    --modern-color-one : #FBFAF5;
+    --modern-color-two : #d3d3d3;
+    --modern-color-three : 	#05014a;
+    --modern-color-four : hsl(166, 100%, 20%);
+  
+    /* Vintage color */
+    --vintage-color-one :#8C9DAD ;
+    --vintage-color-two : #FDFD96;
+    --vintage-color-three :  #7c0a02;
+    --vintage-color-four : #aaaaaa;
+  }
+  
+
 
 .productImage {
     border-radius : 50%;
-    width : 300px;
-    height : 300px;
+    width : 250px;
+    height : 250px;
     object-fit : cover;
+    transition : 0.5s transform ease;
+}
+.productImage:hover {
+    transform : scale(1.07);
     
 
 }
@@ -12,4 +57,45 @@
     flex-direction : column;
     align-items : center;
     justify-content : center;
+    background-color : var( --heading-color-one-verone);
+    padding : 20px;
+    border-radius : 30px;
+    text-align : left;
+    position : relative;
+   
+    /* padding : 20px; */
+    
+}
+.productContainer::before{
+    content : 'fresh';
+    color : #fff;
+    width : 70px;
+    height : 30px;
+    position : absolute;
+    background-color : var(--highlight-color-two-versone);
+    top : 0;
+    left : 0;
+    font-size : 17px;
+    font-weight : 600;
+    transform : rotate(-370deg);
+    border-radius : 3px;
+    text-align:center;
+    /* transform:rotateY(120deg); */
+}
+.productContainer p {
+    font-size : 17px;
+    font-weight : 600;
+    margin-top : 15px;
+    text-align : left;
+}
+.cartbtn {
+    padding : 10px 40px;
+    border : none;
+    outline : none;
+    border-radius : 20px;
+    font-size : 17px;
+    font-weight : 600;
+    margin-top : 10px;
+    background-color : var(--hightlight-color-two);
+    color : #fff;
 }

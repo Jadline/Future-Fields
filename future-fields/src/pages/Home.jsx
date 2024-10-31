@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom'
 import FeaturedProduct from '../Components/FeaturedProduct'
 const featuredProducts = [
     {
-        product : 'eggs',
+        product : 'Eggs',
         price : 5,
         imgSrc : '/eggs.jpeg',
         id : 1,
@@ -13,18 +13,25 @@ const featuredProducts = [
 
     },
     {
-        product : 'grapes',
+        product : 'Grapes',
         price : 3,
         imgSrc : '/grapes.jpeg',
         id : 2,
         quantity : 'packet'
     },
     {
-        product : 'strawberry',
+        product : 'Strawberry',
         price : 4,
         imgSrc : '/strawberry.jpeg',
         id : 3,
-        quantity : 'packt'
+        quantity : 'packet'
+    },
+    {
+        product : 'Avocado',
+        price : 20,
+        imgSrc : '/avocado.jpeg',
+        id : 4,
+        quantity : 'crate'
     }
 ]
 function Home (){
@@ -43,11 +50,16 @@ function Home (){
                 <NavLink className={styles.btn} to='/signin'>Sign Up</NavLink>
             </div>
         </div>
-        <ul className={styles.featured}>
-            {featuredProducts.map((item) => 
-                <FeaturedProduct featureditem ={item} key={item.id} />
-            )}
-        </ul>
+
+            <div className={styles.newproduce}> 
+                <h1>Available fresh produce</h1>
+                <ul className={styles.featured}>
+                    {featuredProducts.map((item) => 
+                        <FeaturedProduct featureditem ={item} key={item.id} />
+                    )}
+                </ul>    
+            </div>
+     
            
            {/* <div>
 
