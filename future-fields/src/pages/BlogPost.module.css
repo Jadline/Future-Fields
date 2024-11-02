@@ -1,0 +1,198 @@
+.contentContainer img {
+    width : 300px;
+    height : 300px;
+    max-width : 300px;
+    height :300px;
+    object-fit:cover;
+    border-radius : 10px;
+}
+.contentContainer p {
+    color : #fff;
+    line-height : 1.5;
+    font-size : 18px;
+}
+.contentContainer h3 {
+    font-size :24px;
+    color :#fff;
+    margin-bottom :10px;
+}
+/* .blogone {
+    display : flex;
+    align-items :center;
+    justify-content : space-between;
+    gap : 20px;
+    height : 65vh;
+    
+ 
+} */
+ .blogone{
+    display : flex;
+    align-items :center;
+    justify-content : space-between;
+    gap : 20px;
+    height : 55vh;
+    position : relative;
+    padding : 30px;
+
+ }
+ .blogone::before {
+    position : absolute;
+    content : '';
+    top : 0;
+    left:0;
+    right : 0;
+    bottom : 0;
+    background: url('/blogphotoone.jpeg');
+    background-position : center;
+    background-repeat : repeat;
+    /* filter : grayscale(100%); */
+    /* filter : blur(10px); */
+    /* z-index: 0; */
+
+}
+.blogone > * {
+    z-index : 1;
+    color :#fff;
+}
+ /* .blogone {
+    background:url('/blogphotoone.jpeg');
+    height : 55vh;
+    padding : 30px;
+ } */
+.blogtwo {
+    display : flex;
+    align-items :center;
+    justify-content : space-between;
+    gap : 20px;
+    height : 55vh;
+    position : relative;
+    padding : 30px;
+   
+}
+.blogtwo::before {
+    position : absolute;
+    content : '';
+    top : 0;
+    left:0;
+    right : 0;
+    bottom : 0;
+    background: url('/blogphototwo.jpeg');
+    background-position : center;
+    /* filter : grayscale(100%); */
+    filter : blur(10px);
+    z-index: 0;
+
+}
+.blogtwo > * {
+    position : relative ;
+    z-index : 1;
+    color : #fff;
+}
+.blogtwo p {
+    font-size : 18px;
+}
+
+.blogthree {
+    display : flex;
+    align-items :center;
+    justify-content : space-between;
+    gap : 20px;
+    height : 55vh;
+    position : relative;
+    padding : 30px;
+   
+    
+   
+}
+.blogthree::before{
+    content : '';
+    position : absolute;
+    top : 0;
+    bottom : 0;
+    left :0;
+    right :0;
+    backdrop-filter : blur(10px);
+    background :rgba(255,255,255,0.2);
+}
+.blogthree img {
+    z-index : 1;
+    order : 1;
+}
+.blogthree > *{
+    position : relative;
+    z-index : 1;
+}
+ .blogfour {
+    display : flex;
+    align-items :center;
+    justify-content : space-between;
+    gap : 20px;
+    height : 55vh;
+    position : relative;
+    padding : 30px;
+  
+   
+ }
+ .blogfour > * {
+    position : relative;
+    z-index : 1;
+    color :#fff;
+ }
+ .blogfour::before {
+    position :absolute;
+    top :0;
+    bottom :0;
+    left :0;
+    right : 0;
+    content :'';
+    background:url('/blogphotothree.jpeg');
+    background-position :center;
+    /* background-size : cover; */
+    filter : blur(10px);
+    z-index : 0;
+    
+ }
+ .blogfive {
+    display : flex;
+    align-items :center;
+    justify-content : space-between;
+    gap : 20px;
+    height :55vh;
+    position:relative;
+    padding :30px;
+
+ }
+ .blogfive::before {
+    position : absolute;
+    top : 0;
+    bottom :0;
+    left :0;
+    right :0;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter : blur(10px);
+    z-index : 1;
+    content :'';
+ }
+ .blogfive > *{
+    z-index : 2;
+    font-size : 17px;
+ }
+ .blogfive img {
+    order : 1;
+   
+ }
+ .authorContent {
+    display :flex;
+    gap : 10px;
+    align-items :center;
+    justify-content :flex-start;
+    margin-top : 15px;
+    background-color :rgba(175, 18, 6, 0.7);
+    /* font-size :22px; */
+    width : 35%;
+    border-radius : 15px;
+    padding :10px;
+    font-weight :600;
+
+ }
+ 

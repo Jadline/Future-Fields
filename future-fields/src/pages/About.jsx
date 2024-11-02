@@ -1,6 +1,7 @@
 import styles from "./About.module.css"
 import PageNav from "../Components/PageNav"
 import Logo from "../Components/Logo"
+
 function About (){
     return(
         <div className={styles.aboutContainer}>
@@ -43,20 +44,39 @@ function About (){
             </div>
             <div className={styles.staffContainer}>
                 <div className={styles.frostoverlaytwo}>
-                    <h1>Our Staff</h1>
+                    <h1 className={styles.title}>Future Field's Team</h1>
                     <div className={styles.staffinfo}>
                         <div>
                           
                             <img src='/john.jpeg' className={styles.staffimage}/>
-                            <p>John Peterson</p>
-                            <p>Farm Manager</p>
-                            <p>John oversees the daily operations of the ranch</p>
-                         
+                            <h3>John Peterson</h3>
+                            <p className={styles.occupation}>Farm Manager</p>
+                            <p>John oversees the daily operations of the ranch</p>              
                         </div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div>
+                            <img src='/emilytwo.jpeg' className={styles.staffimage}/>
+                            <h3>Dr Emily Lopez</h3>
+                            <p className={styles.occupation}>Head Veterinarian</p>
+                            <p> Emily is responsible for the health and well-being of all animals on the ranch.</p>
+                        </div>
+                        <div>
+                            <img src='/marcus.jpeg' className={styles.staffimage}/>
+                            <h3>Marcus Taylor</h3>
+                            <p className={styles.occupation}>Crop Specialist</p>
+                            <p>Marcus is in charge of crop cultivation and soil management.</p>
+                        </div>
+                        <div>
+                            <img src='racheal.jpeg' className={styles.staffimage}/>
+                            <h3>Racheal Harford</h3>
+                            <p className={styles.occupation}>Livestock Supervisor</p>
+                            <p> Rachel manages the daily care and breeding of livestock</p>
+                        </div>
+                        <div>
+                            <img src='/alex.jpeg' className={styles.staffimage}/>
+                            <h3>Alex Rivers</h3>
+                            <p className={styles.occupation}>Events Coordinator</p>
+                            <p>Alex's  fosters a sense of community and connection</p>
+                        </div>
                     </div>
                 </div>
                

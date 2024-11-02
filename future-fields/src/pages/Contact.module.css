@@ -1,0 +1,78 @@
+.contactContainer {
+    /* background : red; */
+    width : 95%;
+    height :100vh;
+    margin :0 auto;
+    background : url('/logo-one.jpeg');
+    background-position :center;
+    background-size : cover;
+   
+    
+}
+.contactnav {
+    display : flex;
+    justify-content : space-between;
+    height : 80px;
+    /* background-color : rg; */
+  
+    /* border-radius : 30px; */
+    /* padding-top : 30px; */
+    padding :30px;
+    background-color :green;
+    
+    /* padding-block : 20px; */
+}
+.contactnav > * {
+    color :#000;
+
+}
+.contactinfo {
+    margin-top :50px;
+    display : flex;
+    align-items :center;
+    justify-content :space-between;
+    gap:30px;
+    margin-bottom : 50px;
+   
+}
+.flexitem {
+    flex : 1;
+}
+.flexitem h1 {
+    font-size : 42px;
+    color : green;
+}
+.flexitem p {
+    font-size : 20px;
+}
+.mapContainer {
+    display : flex;
+    align-items :center;
+    justify-content :center;
+    margin-top : 50px;
+}
+.infoContainer {
+    height : 75vh;
+    border : 2px solid green;
+    margin : 0 auto;
+}
+.form {
+    display : flex;
+    flex-direction :column;
+    align-items : center;
+    justify-content :center;
+    margin-top : 30px;
+    border : 2px solid green;
+    width : 40%;
+    padding : 30px;
+    
+    
+}
+.form label {
+    margin-bottom :15px;
+    text-align : left;
+}
+.form input {
+    height : 30px;
+    width : 200px;
+}
