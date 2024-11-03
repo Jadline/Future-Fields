@@ -30,8 +30,9 @@ function Contact (){
             </div>
            
             <div className={styles.infoContainer}>
+                 <h1>To send an inquiry/get Newsletter</h1>
                 <form className={styles.form}>
-                    <h1>To send an inquiry/get Newsletter</h1>
+                   
                     <label>First Name</label>
                     <input type='text'/>
                     <label>Last Name</label>
@@ -40,7 +41,7 @@ function Contact (){
                     <input type='email'/>
                     <label>Phone Number</label>
                     <input type='tel'/>
-                    <button>Submit</button>
+                    <button className={styles.submitbtn}>Submit</button>
                     
                 </form>
             </div>

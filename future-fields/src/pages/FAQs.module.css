@@ -1,0 +1,61 @@
+.faqsContainer {
+    
+    min-height : 100vh;
+    position : relative;
+    display : flex;
+    align-items :center;
+    justify-content : center;
+    flex-direction : column;
+    
+   
+}
+.waves {
+    /* top : 0; */
+    position :absolute;
+    /* left : 0;
+    /* width : 100%; */
+     /* z-index : -1;  */
+     top :0;
+     /* left :0;
+     width : 100%;  */
+   
+} 
+.faqText {
+    position : absolute;
+    top : 40vh;
+    left : 50%;
+    transform : translate(-50%,-50%);
+    color :#fff;
+    font-size : 50px;
+    font-weight :600;
+    color : rgb(69, 75, 27);
+}
+.faqs {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction : column;
+    margin-top : 30%;
+    width : 65%;
+}
+/* background-color : rgb(69, 75, 27); */
+.faqsnav{
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    gap : 20px;
+    width : 90%;
+    /* height : 50px; */
+    /* background-color : red; */
+    /* transform : translate(-50%,-50%); */
+    /* background-color :rgb(69, 75, 27);  */
+    position : absolute;
+    top : 7px;
+    left : 50px;
+    z-index : 1;
+    
+  
+    /* border-radius : 30px; */
+    /* padding-top : 30px;
+    padding-inline : 20px; */
+}

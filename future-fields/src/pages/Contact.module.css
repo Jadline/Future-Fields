@@ -52,9 +52,12 @@
     margin-top : 50px;
 }
 .infoContainer {
-    height : 75vh;
-    border : 2px solid green;
+    height : 85vh;
+    /* border : 2px solid green; */
     margin : 0 auto;
+}
+.infoContainer h1 {
+    color : green;
 }
 .form {
     display : flex;
@@ -63,16 +66,31 @@
     justify-content :center;
     margin-top : 30px;
     border : 2px solid green;
-    width : 40%;
-    padding : 30px;
+    width : 35%;
+    padding : 30px 30px 0 30px;
+    margin-left : 30px;
+    border-radius : 15px;
+ 
     
     
 }
 .form label {
     margin-bottom :15px;
     text-align : left;
+    width : 100%;
+    font-weight : 600;
+    color : green;
 }
 .form input {
     height : 30px;
-    width : 200px;
+    width : 100%;
+    margin-bottom : 15px;
+}
+.submitbtn {
+    margin-bottom : 15px;
+    padding : 10px 45px;
+    border-radius : 10px;
+    background-color : transparent;
+    border-color : green;
+    font-size : 17px;
 }

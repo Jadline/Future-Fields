@@ -187,7 +187,7 @@
     align-items :center;
     justify-content :flex-start;
     margin-top : 15px;
-    background-color :rgba(175, 18, 6, 0.7);
+    background-color :hsl(166, 91%, 30%);
     /* font-size :22px; */
     width : 35%;
     border-radius : 15px;
@@ -195,4 +195,5 @@
     font-weight :600;
 
  }
+ /* --modern-color-four-verone : hsl(166, 91%, 30%); */
  

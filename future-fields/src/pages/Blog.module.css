@@ -28,6 +28,7 @@
     --modern-color-two : #d3d3d3;
     --modern-color-three : 	#05014a;
     --modern-color-four : hsl(166, 100%, 20%);
+    --modern-color-four-verone : hsl(166, 91%, 30%);
   
     /* Vintage color */
     --vintage-color-one :#8C9DAD ;
@@ -46,8 +47,8 @@
     padding : 0;
   }
   .blogContainer {
-    background-color : var( --vintage-color-three);
-    width : 85%;
+    background-color : var(--modern-color-four);
+    width : 95%;
     margin : 0 auto;
     /* height : 100vh; */
     position : relative;
