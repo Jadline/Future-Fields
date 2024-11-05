@@ -1,0 +1,143 @@
+.livestockhub {
+    background-color : rgba(53, 94, 59,0.7);
+    width : 95vw;
+    height : 100vh;
+    overflow-y: auto;
+    margin : 0 auto;
+}
+.livestocknav {
+    display : flex;
+   justify-content : space-between;
+   height : 50px; 
+ 
+ 
+   border-radius : 30px; 
+   padding-top : 30px;
+   padding-inline : 20px; 
+   padding-block : 20px;
+}
+.introContainer p {
+    font-size : 20px;
+    
+    /* display : flex;
+    align-items : center;
+    justify-content : center;
+    flex-direction :column; */
+}
+.introContainer h1 {
+    margin-bottom : 15px;
+}
+.introContainer {
+    margin-top : 50px;
+    /* background-color :yellow; */
+    text-align : center;
+    padding : 20px;
+    color : #fff;
+    
+
+}
+.Container {
+    /* background-color : red; */
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    width : 100%;
+    height : 100%;
+    margin-top : 30px;
+    /* padding :30px; */
+    background-color : rgba(53, 94, 59,0.7);
+}
+.livestockContainer {
+    background-color : rgba(53, 94, 59,0.7);
+    box-shadow : 15px 15px 15px 15px rgba(82, 161, 94, 0.7);
+    border-radius : 15px;
+    width : 65%; 
+    height : 90%;
+    width : 70%;
+    padding : 30px;
+    display :flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    
+    
+}
+.animalButtons {
+    display :flex;
+    align-items : center;
+    justify-content :center;
+    gap :5px;
+   
+    padding : 20px;
+    margin-bottom :30px;
+}
+.animalButtons a {
+    color :#000;
+    padding : 10px 20px;
+    background-color : #FFFDD0;
+    text-decoration : none;
+    font-weight : 600;
+    border-radius : 5px;
+}
+.animalButtons a:global(.active) {
+    background-color : rgba(255, 255, 255,0.5);
+
+}
+/* .links a:global(.active) {
+    background-color: rgba(255,255,255,0.8);
+  } */
+/* .animalButtons a:hover {
+    background-color : rgba(255, 255, 255,0.5);
+} */
+/* .sidebar {
+    background-color :purple;
+    height : 20%;
+    width : 30%;
+    margin-left : 15px;
+    margin-top : 20px;
+} */
+
+
+
+
+
+/* .livestockhub {
+    background-color : rgba(53, 94, 59,0.7);
+    min-height : 100vh;
+    width : 95%;
+    margin : 0 auto;
+    /* height : 100vh; */
+    /* overflow-y : hidden; */
+/* 
+   
+}*/ 
+
+/* *{
+    margin :0;
+    padding :0;
+    box-sizing : border-box;
+}
+body {
+    height : 100%;
+}
+
+
+/* .Container {
+    display: flex;
+    align-items : center;
+    justify-content : center;
+    width : 100%;
+    height : 100%;
+    background-color : red;
+    margin-top : 30px;
+} */
+/* .livestockContainer {
+    background-color : #fff;
+    width :75%;
+    height : 90%;
+    border-radius :20px;
+    padding : 20px;
+    border : 30px solid black;
+   
+    
+}  */

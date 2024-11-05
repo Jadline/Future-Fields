@@ -1,0 +1,21 @@
+
+.poultryContainer {
+    width : 100%;
+    height : 100%;
+    background-image :linear-gradient(to right,rgba(62, 62, 236, 0.7),rgba(101, 101, 230, 0.9)), url('/poultry.jpeg');
+    background-position :center;
+    background-size : cover;
+    background-blend-mode : screen;
+    
+}
+.poultryContainer div {
+    font-size : 18px;
+    color : rgb(4, 32, 4);
+    display : flex;
+    align-items :center;
+    justify-content : center;
+    text-align :right;
+    padding : 20px;
+    line-height : 1.5;
+    font-weight : 600;
+}

@@ -1,0 +1,106 @@
+
+/* body,html {
+    height : 100%;
+}
+.cropsContainer {
+    background-color : rgb(180, 196, 36);
+    width : 95%;
+    height : 100%;
+    margin : 0 auto;
+    border: 2px solid red; 
+    /* overflow-y : hidden; */
+
+.cropsnav {
+    display : flex;
+    justify-content : space-between;
+    height : 70px;
+    /* background-color : rg; */
+  
+    /* border-radius : 30px; */
+    padding-top : 30px;
+    padding-inline : 20px;
+    padding-bottom : 50px;
+    /* padding-block : 20px; */
+    background-color: rgb(69, 75, 27);
+
+}
+.cropsContainer {
+    /* background-color: rgb(180, 196, 36); */
+    width: 95%;
+    height: 100vh; 
+    margin: 0 auto;
+    /* border:3px solid red; */
+    overflow-y:auto;
+}
+
+.Container {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between;
+    height: 100%; 
+    /* background-color: blue; */
+}
+
+.sidebar {
+    background-color: rgb(69, 75, 27);
+    width: 20%;
+    height: 55%; /* Custom height */
+    margin-top: 10%; /* Optional */
+    margin-left: 40px;
+    border-radius: 10px;
+    padding:20px;
+}
+
+.mainContainer {
+    /* background-color: orange; */
+    border : 2px solid #fff;
+    width: 60%;
+    height: 70%; 
+    margin : 0 auto;
+    margin-top :70px;
+    border-radius : 15px;
+    background-color: rgb(69, 75, 27);
+    
+}
+.links {
+    display : flex;
+    flex-direction : column;
+    color:#000;
+    
+  
+    /* background-color : #fff; */
+
+}
+.links a {
+    text-decoration : none;
+    margin-bottom : 3px;
+    background-color :#fff;
+    padding: 10px 10px;
+    font-size : 17px;
+    font-weight :bold;
+    color : #000;
+
+}
+.cropintro {
+    text-align:center;
+    font-size : 18px;
+    margin-top :20px;
+    line-height :1.5;
+   
+    
+    
+}
+.sidebar h1 {
+    margin-bottom : 15px;
+    color :#fff;
+}
+/* .links a.active {
+    background-color : orange;
+} */
+.links a:global(.active) {
+    background-color: rgba(255,255,255,0.8);
+  }
+/* .links a:global{.active}{
+
+
+} */

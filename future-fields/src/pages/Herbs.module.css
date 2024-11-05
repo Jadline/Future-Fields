@@ -1,0 +1,37 @@
+.herbsContainer {
+    background-image:url('/herbs.jpeg');
+    background-position :center;
+    background-size :cover;
+    width : 100%;
+    height : 100%;
+    border-radius : 15px;
+    display:flex;
+    align-items : center;
+    justify-content : center;
+    flex-direction : column;
+    padding : 30px;
+    position : relative;
+}
+.herbsContainer::after {
+    content : '';
+    position : absolute;
+    top :0;
+    bottom : 0;
+    right :0;
+    left:0;
+    width : 50%;
+    backdrop-filter:blur(10px);
+    background:rgba(255,255,255,0.2);
+
+
+}
+.herbsContainer h1,.herbsContainer p {
+    z-index : 1;
+    color:#fff;
+}
+.herbsContainer p{
+    font-size :18px;
+    font-weight :400;
+    color :#fff;
+}
+
