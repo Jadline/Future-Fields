@@ -189,11 +189,40 @@
     margin-top : 15px;
     background-color :hsl(166, 91%, 30%);
     /* font-size :22px; */
-    width : 35%;
+    width : 45%;
     border-radius : 15px;
     padding :10px;
     font-weight :600;
 
  }
+ .authorContent p {
+    border-right : 2px solid #fff;
+    padding-right : 5px;
+ }
  /* --modern-color-four-verone : hsl(166, 91%, 30%); */
- 
+ .expandbtn {
+    background-color : transparent;
+    font-size : 20px;
+    font-weight : 600;
+    outline:none;
+    border : none;
+    color: #fff;
+    text-decoration :underline;
+ }
+ .like {
+    padding : 5px 3px;
+    font-size : 20px;
+    background-color :transparent;
+    border:none;
+    outline :none;
+ }
+ .likecount {
+    display :flex;
+    align-items : center;
+    justify-content :center;
+    gap : 5px;
+    color : #fff;
+ }
+ .likecount p{
+    font-size :20px;
+ }

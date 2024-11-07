@@ -78,6 +78,7 @@ function About (){
     const[showMessage1,setshowMessage1] = useState(false);
     const[currentquoteindex,setcurrentquoteindex] = useState(0)
     
+    
     useEffect(() => {
          const intervalid = setInterval(() => {
             setcurrentquoteindex(curindex => curindex === aboutPageQuotes.length-1 ? 0 : curindex+1)
