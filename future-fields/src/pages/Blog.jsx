@@ -2,6 +2,7 @@ import styles from './Blog.module.css'
 import Logo from '../Components/Logo'
 import PageNav from '../Components/PageNav'
 import BlogPost from './BlogPost';
+import { useState,useRef,useEffect } from 'react';
 const blogPosts = [
     {
         id : 1,
@@ -53,14 +54,52 @@ const blogPosts = [
 
   
 function Blog (){
+  const[query,setQuery] = useState('');
+  const filteredblogs = blogPosts.filter(post => post.content.toLowerCase().includes(query.toLowerCase()))
+  const[comment,setComment] = useState('')
+  const textareRef = useRef(null)
+  useEffect(() => {
+    textareRef.current.focus()
+  },[])
+  function handlemakeComment(e){
+    e.preventDefault()
+    setComment('');
+    textareRef.current.focus()
+
+  }
+    
     return(
         <div className={styles.blogContainer}>
               <div className={styles.blognav}>
                 <Logo/>
                 <PageNav/>
             </div>
+            <div className ={styles.inputContainer}>
+              <h2>Search:</h2>
+              <input type='text' placeholder='search blog' value={query} onChange={(e) => setQuery(e.target.value)} />
+              {/* <p>{query}</p> */}
+            </div>
             <div className={styles.postsContainer}>
-                {blogPosts.map((post) => <BlogPost key={post.id} post={post}/>)}
+                {filteredblogs?.map((post) => <BlogPost key={post.id} post={post}/>)}
+            </div>
+            <div className={styles.commentSection}>
+              <p>Leave us a comment </p>
+              <textarea placeholder='please leave us a comment'
+               value={comment} 
+               onChange={(e) => setComment(e.target.value)} 
+               ref={textareRef}
+               onKeyDown={(e) => {
+                if(e.key === 'Enter') {
+                  e.preventDefault()
+                  handlemakeComment(e)
+                }
+               }}
+
+               >
+
+              </textarea>
+              <button type='submit' onClick={handlemakeComment}>Comment</button>
+              
             </div>
             
         </div>

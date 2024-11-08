@@ -85,6 +85,7 @@
     height : 30px;
     width : 100%;
     margin-bottom : 15px;
+    padding : 10px;
 }
 .submitbtn {
     margin-bottom : 15px;
@@ -92,5 +93,10 @@
     border-radius : 10px;
     background-color : transparent;
     border-color : green;
+    font-size : 17px;
+}
+.required {
+    color : red;
+    margin-left : 100px;
     font-size : 17px;
 }

@@ -9,6 +9,7 @@ function BlogPost({post}){
         const savedLikes = localStorage.getItem(`likes_${post.id}`)
         return savedLikes ? Number(savedLikes) : 0;
     })
+   
 
     useEffect(() => {
         localStorage.setItem(`likes_${post.id}`,countlikes)

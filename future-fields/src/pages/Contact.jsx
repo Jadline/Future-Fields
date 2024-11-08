@@ -1,7 +1,97 @@
 import styles from './Contact.module.css'
 import Logo from '../Components/Logo'
 import PageNav from '../Components/PageNav'
+import { useState,useRef } from 'react'
 function Contact (){
+    const[formdata,setFormData] = useState({
+        firstname : '',
+        lastname : '',
+        email : '',
+        phonenumber : ''
+    })
+    const[errors,setErrors] = useState({
+        firstname : null,
+        lastname : null,
+        email: null,
+        phonenumber : null
+    })
+    // const [requiredtext,setRequiredText] = useState(null)
+    const firstnameRef = useRef(null)
+    const lastnameRef = useRef(null)
+    const emailRef = useRef(null)
+    const phoneRef = useRef(null)
+    // function to handle input change 
+    function handleInputChange(e){
+       const{name,value} = e.target;
+       setFormData((prevdata) => ({...prevdata,[name] : value}))
+
+    }
+    function handleSubmit(e) {
+        e.preventDefault()
+
+        function validatefield(fieldname,value){
+            if(!value) return 'Field is required'
+            if(fieldname === 'email' && !/\S+@\S+\.\S+/.test(value)) return 'Invalid email address'
+            if(fieldname === 'phonenumber' && !/^\d+$/.test(value)) return ' digits only allowed'
+            return null;
+
+        }
+
+        const newErrors = {
+            firstname : validatefield('firsname',formdata.firstname),
+            lastname : validatefield('lastname',formdata.lastname),
+            email :validatefield('email',formdata.email),
+            phonenumber : validatefield('phonenumber',formdata.phonenumber)
+        }
+        setErrors(newErrors)
+        const currentfieldError = Object.keys(newErrors).find(field => newErrors[field])
+
+        if(currentfieldError) {
+            // currentfieldError === 'firstname' && setRequiredText('required')||
+            // currentfieldError === 'lastname' && setRequiredText('required')||
+            // currentfieldError === 'email' && setRequiredText('invalid email address')||
+            // currentfieldError === 'phonenumber' && setRequiredText('phone number should include digits only')
+            return;
+        }
+        setFormData({
+            firstname : '',
+            lastname : '',
+            email : '',
+            phonenumber : ''
+        })
+        setErrors({
+            firstname : null,
+            lastname : null,
+            email : null,
+            phonenumber : null
+        })
+        
+    }
+    // const[firstnameInput,setfirstnameInput] = useState('')
+    // const[lastnameInput,setlastnameInput] = useState('')
+    // const firstnameinputRef = useRef(null)
+    // const [requiredtext,setrequiredText] = useState(null);
+
+    // useEffect(() => {
+    //     firstnameinputRef.current.focus()
+    // },[])
+
+    // function  handleSubmit(e){
+    //     e.preventDefault()
+    //     if(firstnameInput === '' || firstnameInput === null){
+    //         setrequiredText('Field is required')
+    //         firstnameinputRef.current.focus()
+    //         return;
+    //     }
+    //     else {
+    //         setfirstnameInput('');
+    //         firstnameinputRef.current.focus()
+    //     }
+
+
+    // }
+    
+
     return(
         <div className={styles.contactContainer}>
             <div className={styles.contactnav}>
@@ -31,17 +121,48 @@ function Contact (){
            
             <div className={styles.infoContainer}>
                  <h1>To send an inquiry/get Newsletter</h1>
-                <form className={styles.form}>
+                <form className={styles.form} onSubmit={handleSubmit}>
                    
-                    <label>First Name</label>
-                    <input type='text'/>
-                    <label>Last Name</label>
-                    <input type='text'/>
-                    <label>Email Address</label>
-                    <input type='email'/>
-                    <label>Phone Number</label>
-                    <input type='tel'/>
-                    <button className={styles.submitbtn}>Submit</button>
+                    <label>First Name<span className={errors.firstname && styles.required}>{errors.firstname}</span></label>
+                    <input type='text'
+                    placeholder='Enter your first name'
+                    name ='firstname'
+                    value = {formdata.firstname}      
+                    onChange={handleInputChange}
+                    ref={firstnameRef}   
+                  
+                    />
+                    
+                    <label>Last Name<span className={ errors.lastname && styles.required}>{errors.lastname}</span></label>
+                    <input type='text' 
+                    placeholder='Enter your last name'
+                    name ='lastname'
+                    value = {formdata.lastname}      
+                    onChange={handleInputChange}
+                    ref={lastnameRef}
+                    
+                  
+                    />
+                    <label>Email Address<span className={errors.email && styles.required}>{errors.email}</span></label>
+                    <input type='email'
+                    placeholder='Enter your email'
+                    name='email'
+                    value = {formdata.email}      
+                    onChange={handleInputChange}
+                    ref={emailRef}
+                    
+                   
+                    />
+                    <label>Phone Number<span className={errors.phonenumber && styles.required}>{errors.phonenumber}</span></label>
+
+                    <input type='tel'
+                     placeholder='Enter your tel number'
+                     value = {formdata.phonenumber}
+                     name='phonenumber'
+                     onChange={handleInputChange} 
+                     ref={phoneRef}  
+                     />
+                    <button className={styles.submitbtn} onClick={handleSubmit}>Submit</button>
                     
                 </form>
             </div>
